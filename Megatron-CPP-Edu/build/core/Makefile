@@ -175,6 +175,126 @@ megatron_core/fast:
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/build
 .PHONY : megatron_core/fast
 
+layers/dropout.o: layers/dropout.cpp.o
+.PHONY : layers/dropout.o
+
+# target to build an object file
+layers/dropout.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/dropout.cpp.o
+.PHONY : layers/dropout.cpp.o
+
+layers/dropout.i: layers/dropout.cpp.i
+.PHONY : layers/dropout.i
+
+# target to preprocess a source file
+layers/dropout.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/dropout.cpp.i
+.PHONY : layers/dropout.cpp.i
+
+layers/dropout.s: layers/dropout.cpp.s
+.PHONY : layers/dropout.s
+
+# target to generate assembly for a file
+layers/dropout.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/dropout.cpp.s
+.PHONY : layers/dropout.cpp.s
+
+layers/embedding.o: layers/embedding.cpp.o
+.PHONY : layers/embedding.o
+
+# target to build an object file
+layers/embedding.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/embedding.cpp.o
+.PHONY : layers/embedding.cpp.o
+
+layers/embedding.i: layers/embedding.cpp.i
+.PHONY : layers/embedding.i
+
+# target to preprocess a source file
+layers/embedding.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/embedding.cpp.i
+.PHONY : layers/embedding.cpp.i
+
+layers/embedding.s: layers/embedding.cpp.s
+.PHONY : layers/embedding.s
+
+# target to generate assembly for a file
+layers/embedding.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/embedding.cpp.s
+.PHONY : layers/embedding.cpp.s
+
+layers/layer.o: layers/layer.cpp.o
+.PHONY : layers/layer.o
+
+# target to build an object file
+layers/layer.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/layer.cpp.o
+.PHONY : layers/layer.cpp.o
+
+layers/layer.i: layers/layer.cpp.i
+.PHONY : layers/layer.i
+
+# target to preprocess a source file
+layers/layer.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/layer.cpp.i
+.PHONY : layers/layer.cpp.i
+
+layers/layer.s: layers/layer.cpp.s
+.PHONY : layers/layer.s
+
+# target to generate assembly for a file
+layers/layer.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/layer.cpp.s
+.PHONY : layers/layer.cpp.s
+
+layers/layer_norm.o: layers/layer_norm.cpp.o
+.PHONY : layers/layer_norm.o
+
+# target to build an object file
+layers/layer_norm.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/layer_norm.cpp.o
+.PHONY : layers/layer_norm.cpp.o
+
+layers/layer_norm.i: layers/layer_norm.cpp.i
+.PHONY : layers/layer_norm.i
+
+# target to preprocess a source file
+layers/layer_norm.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/layer_norm.cpp.i
+.PHONY : layers/layer_norm.cpp.i
+
+layers/layer_norm.s: layers/layer_norm.cpp.s
+.PHONY : layers/layer_norm.s
+
+# target to generate assembly for a file
+layers/layer_norm.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/layer_norm.cpp.s
+.PHONY : layers/layer_norm.cpp.s
+
+layers/linear.o: layers/linear.cpp.o
+.PHONY : layers/linear.o
+
+# target to build an object file
+layers/linear.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/linear.cpp.o
+.PHONY : layers/linear.cpp.o
+
+layers/linear.i: layers/linear.cpp.i
+.PHONY : layers/linear.i
+
+# target to preprocess a source file
+layers/linear.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/linear.cpp.i
+.PHONY : layers/linear.cpp.i
+
+layers/linear.s: layers/linear.cpp.s
+.PHONY : layers/linear.s
+
+# target to generate assembly for a file
+layers/linear.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/linear.cpp.s
+.PHONY : layers/linear.cpp.s
+
 tensor/tensor.o: tensor/tensor.cpp.o
 .PHONY : tensor/tensor.o
 
@@ -212,6 +332,21 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... megatron_core"
+	@echo "... layers/dropout.o"
+	@echo "... layers/dropout.i"
+	@echo "... layers/dropout.s"
+	@echo "... layers/embedding.o"
+	@echo "... layers/embedding.i"
+	@echo "... layers/embedding.s"
+	@echo "... layers/layer.o"
+	@echo "... layers/layer.i"
+	@echo "... layers/layer.s"
+	@echo "... layers/layer_norm.o"
+	@echo "... layers/layer_norm.i"
+	@echo "... layers/layer_norm.s"
+	@echo "... layers/linear.o"
+	@echo "... layers/linear.i"
+	@echo "... layers/linear.s"
 	@echo "... tensor/tensor.o"
 	@echo "... tensor/tensor.i"
 	@echo "... tensor/tensor.s"

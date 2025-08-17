@@ -187,6 +187,19 @@ test_tensor/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_tensor.dir/build.make tests/CMakeFiles/test_tensor.dir/build
 .PHONY : test_tensor/fast
 
+#=============================================================================
+# Target rules for targets named test_layers
+
+# Build rule for target.
+test_layers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_layers
+.PHONY : test_layers
+
+# fast build rule for target.
+test_layers/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_layers.dir/build.make tests/CMakeFiles/test_layers.dir/build
+.PHONY : test_layers/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,6 +213,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... megatron_core"
+	@echo "... test_layers"
 	@echo "... test_tensor"
 .PHONY : help
 

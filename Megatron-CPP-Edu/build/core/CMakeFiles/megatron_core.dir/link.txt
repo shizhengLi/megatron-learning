@@ -1,2 +1,2 @@
-/usr/bin/ar qc libmegatron_core.a CMakeFiles/megatron_core.dir/tensor/tensor.cpp.o
+/usr/bin/ar qc libmegatron_core.a CMakeFiles/megatron_core.dir/tensor/tensor.cpp.o CMakeFiles/megatron_core.dir/layers/layer.cpp.o CMakeFiles/megatron_core.dir/layers/linear.cpp.o CMakeFiles/megatron_core.dir/layers/layer_norm.cpp.o CMakeFiles/megatron_core.dir/layers/dropout.cpp.o CMakeFiles/megatron_core.dir/layers/embedding.cpp.o
 /usr/bin/ranlib libmegatron_core.a

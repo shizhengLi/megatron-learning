@@ -97,6 +97,7 @@ core/clean: core/CMakeFiles/megatron_core.dir/clean
 
 # Recursive "all" directory target.
 tests/all: tests/CMakeFiles/test_tensor.dir/all
+tests/all: tests/CMakeFiles/test_layers.dir/all
 .PHONY : tests/all
 
 # Recursive "preinstall" directory target.
@@ -105,6 +106,7 @@ tests/preinstall:
 
 # Recursive "clean" directory target.
 tests/clean: tests/CMakeFiles/test_tensor.dir/clean
+tests/clean: tests/CMakeFiles/test_layers.dir/clean
 .PHONY : tests/clean
 
 #=============================================================================
@@ -114,12 +116,12 @@ tests/clean: tests/CMakeFiles/test_tensor.dir/clean
 core/CMakeFiles/megatron_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=1,2 "Built target megatron_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target megatron_core"
 .PHONY : core/CMakeFiles/megatron_core.dir/all
 
 # Build rule for subdir invocation for target.
 core/CMakeFiles/megatron_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/megatron_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles 0
 .PHONY : core/CMakeFiles/megatron_core.dir/rule
@@ -140,12 +142,12 @@ core/CMakeFiles/megatron_core.dir/clean:
 tests/CMakeFiles/test_tensor.dir/all: core/CMakeFiles/megatron_core.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_tensor.dir/build.make tests/CMakeFiles/test_tensor.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_tensor.dir/build.make tests/CMakeFiles/test_tensor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=3,4 "Built target test_tensor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=10,11 "Built target test_tensor"
 .PHONY : tests/CMakeFiles/test_tensor.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_tensor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_tensor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_tensor.dir/rule
@@ -158,6 +160,32 @@ test_tensor: tests/CMakeFiles/test_tensor.dir/rule
 tests/CMakeFiles/test_tensor.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_tensor.dir/build.make tests/CMakeFiles/test_tensor.dir/clean
 .PHONY : tests/CMakeFiles/test_tensor.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_layers.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_layers.dir/all: core/CMakeFiles/megatron_core.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_layers.dir/build.make tests/CMakeFiles/test_layers.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_layers.dir/build.make tests/CMakeFiles/test_layers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=8,9 "Built target test_layers"
+.PHONY : tests/CMakeFiles/test_layers.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_layers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_layers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_layers.dir/rule
+
+# Convenience name for target.
+test_layers: tests/CMakeFiles/test_layers.dir/rule
+.PHONY : test_layers
+
+# clean rule for target.
+tests/CMakeFiles/test_layers.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_layers.dir/build.make tests/CMakeFiles/test_layers.dir/clean
+.PHONY : tests/CMakeFiles/test_layers.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

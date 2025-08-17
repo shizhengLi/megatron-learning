@@ -5,19 +5,18 @@
 namespace megatron {
 
 Linear::Linear(int in_features, int out_features, bool bias, const std::string& name)
-    : Layer(name), in_features_(in_features), out_features_(out_features), has_bias_(bias) {
+    : Layer(name), 
+      in_features_(in_features), 
+      out_features_(out_features), 
+      has_bias_(bias) {
     
     // Initialize weight matrix: [out_features, in_features]
     weight_ = Tensor({out_features, in_features});
+    weight_grad_ = Tensor({out_features, in_features});
     
     // Initialize bias if needed: [out_features]
     if (has_bias_) {
         bias_ = Tensor({out_features});
-    }
-    
-    // Initialize gradient tensors
-    weight_grad_ = Tensor({out_features, in_features});
-    if (has_bias_) {
         bias_grad_ = Tensor({out_features});
     }
     
@@ -112,6 +111,13 @@ void Linear::initialize_parameters() {
     }
     
     // Initialize gradients to zeros
+    weight_grad_.zeros();
+    if (has_bias_) {
+        bias_grad_.zeros();
+    }
+}
+
+void Linear::zero_grad() {
     weight_grad_.zeros();
     if (has_bias_) {
         bias_grad_.zeros();

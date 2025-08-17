@@ -5,7 +5,9 @@
 namespace megatron {
 
 Embedding::Embedding(int vocab_size, int embedding_dim, const std::string& name)
-    : Layer(name), vocab_size_(vocab_size), embedding_dim_(embedding_dim) {
+    : Layer(name), 
+      vocab_size_(vocab_size), 
+      embedding_dim_(embedding_dim) {
     
     // Initialize embedding matrix: [vocab_size, embedding_dim]
     weight_ = Tensor({vocab_size, embedding_dim});

@@ -22,6 +22,9 @@ public:
     // Set weights and biases (for initialization)
     void set_weight(const Tensor& weight);
     void set_bias(const Tensor& bias);
+    
+    // Reset gradients
+    void zero_grad() override;
 
 private:
     int in_features_;

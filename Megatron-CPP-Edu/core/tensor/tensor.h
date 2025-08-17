@@ -22,6 +22,7 @@ enum class DataType {
 class Tensor {
 public:
     // Constructors
+    Tensor(); // Default constructor - creates empty tensor
     Tensor(const std::vector<int>& shape, DataType dtype = DataType::FLOAT32);
     Tensor(std::initializer_list<int> shape, DataType dtype = DataType::FLOAT32);
     

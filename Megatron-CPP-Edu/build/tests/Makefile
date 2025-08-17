@@ -175,6 +175,44 @@ test_tensor/fast:
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_tensor.dir/build.make tests/CMakeFiles/test_tensor.dir/build
 .PHONY : test_tensor/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_layers.dir/rule:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_layers.dir/rule
+.PHONY : tests/CMakeFiles/test_layers.dir/rule
+
+# Convenience name for target.
+test_layers: tests/CMakeFiles/test_layers.dir/rule
+.PHONY : test_layers
+
+# fast build rule for target.
+test_layers/fast:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_layers.dir/build.make tests/CMakeFiles/test_layers.dir/build
+.PHONY : test_layers/fast
+
+test_layers.o: test_layers.cpp.o
+.PHONY : test_layers.o
+
+# target to build an object file
+test_layers.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_layers.dir/build.make tests/CMakeFiles/test_layers.dir/test_layers.cpp.o
+.PHONY : test_layers.cpp.o
+
+test_layers.i: test_layers.cpp.i
+.PHONY : test_layers.i
+
+# target to preprocess a source file
+test_layers.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_layers.dir/build.make tests/CMakeFiles/test_layers.dir/test_layers.cpp.i
+.PHONY : test_layers.cpp.i
+
+test_layers.s: test_layers.cpp.s
+.PHONY : test_layers.s
+
+# target to generate assembly for a file
+test_layers.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_layers.dir/build.make tests/CMakeFiles/test_layers.dir/test_layers.cpp.s
+.PHONY : test_layers.cpp.s
+
 test_tensor.o: test_tensor.cpp.o
 .PHONY : test_tensor.o
 
@@ -211,7 +249,11 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... test_layers"
 	@echo "... test_tensor"
+	@echo "... test_layers.o"
+	@echo "... test_layers.i"
+	@echo "... test_layers.s"
 	@echo "... test_tensor.o"
 	@echo "... test_tensor.i"
 	@echo "... test_tensor.s"

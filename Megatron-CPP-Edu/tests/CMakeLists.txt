@@ -29,3 +29,28 @@ else()
     target_link_libraries(test_tensor_main PRIVATE megatron_core)
     add_test(NAME test_tensor COMMAND test_tensor_main)
 endif()
+
+# Layer tests
+add_executable(test_layers test_layers.cpp)
+target_link_libraries(test_layers 
+    PRIVATE megatron_core
+)
+if(GTest_FOUND)
+    target_link_libraries(test_layers 
+        PRIVATE GTest::gtest 
+        PRIVATE GTest::gtest_main
+    )
+endif()
+
+# Add test to CTest
+if(GTest_FOUND)
+    add_test(NAME test_layers COMMAND test_layers)
+    # Test discovery
+    include(GoogleTest)
+    gtest_discover_tests(test_layers)
+else()
+    # Custom main function when GTest is not available
+    add_executable(test_layers_main test_layers_main.cpp)
+    target_link_libraries(test_layers_main PRIVATE megatron_core)
+    add_test(NAME test_layers COMMAND test_layers_main)
+endif()

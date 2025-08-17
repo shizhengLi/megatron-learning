@@ -6,6 +6,11 @@
 namespace megatron {
 
 // Constructor implementations
+Tensor::Tensor() 
+    : shape_({0}), size_(0), dtype_(DataType::FLOAT32), device_(DeviceType::CPU), owns_data_(false) {
+    // Default constructor creates empty tensor
+}
+
 Tensor::Tensor(const std::vector<int>& shape, DataType dtype) 
     : shape_(shape), dtype_(dtype), device_(DeviceType::CPU), owns_data_(true) {
     validate_shape(shape);

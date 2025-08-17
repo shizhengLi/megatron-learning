@@ -12,6 +12,7 @@
 /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core/CMakeFiles/install/local.dir
 /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core/CMakeFiles/install/strip.dir
 /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/tests/CMakeFiles/test_tensor.dir
+/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/tests/CMakeFiles/test_layers.dir
 /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/tests/CMakeFiles/edit_cache.dir
 /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/tests/CMakeFiles/rebuild_cache.dir
 /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/tests/CMakeFiles/list_install_components.dir

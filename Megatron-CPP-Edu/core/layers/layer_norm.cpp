@@ -4,7 +4,9 @@
 namespace megatron {
 
 LayerNorm::LayerNorm(int normalized_shape, float eps, const std::string& name)
-    : Layer(name), normalized_shape_(normalized_shape), eps_(eps) {
+    : Layer(name), 
+      normalized_shape_(normalized_shape), 
+      eps_(eps) {
     
     // Initialize parameters: weight and bias
     weight_ = Tensor({normalized_shape});
