@@ -217,6 +217,20 @@ test_phase4/fast:
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_phase4.dir/build.make tests/CMakeFiles/test_phase4.dir/build
 .PHONY : test_phase4/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_parallel.dir/rule:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_parallel.dir/rule
+.PHONY : tests/CMakeFiles/test_parallel.dir/rule
+
+# Convenience name for target.
+test_parallel: tests/CMakeFiles/test_parallel.dir/rule
+.PHONY : test_parallel
+
+# fast build rule for target.
+test_parallel/fast:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parallel.dir/build.make tests/CMakeFiles/test_parallel.dir/build
+.PHONY : test_parallel/fast
+
 test_layers.o: test_layers.cpp.o
 .PHONY : test_layers.o
 
@@ -240,6 +254,30 @@ test_layers.s: test_layers.cpp.s
 test_layers.cpp.s:
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_layers.dir/build.make tests/CMakeFiles/test_layers.dir/test_layers.cpp.s
 .PHONY : test_layers.cpp.s
+
+test_parallel.o: test_parallel.cpp.o
+.PHONY : test_parallel.o
+
+# target to build an object file
+test_parallel.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parallel.dir/build.make tests/CMakeFiles/test_parallel.dir/test_parallel.cpp.o
+.PHONY : test_parallel.cpp.o
+
+test_parallel.i: test_parallel.cpp.i
+.PHONY : test_parallel.i
+
+# target to preprocess a source file
+test_parallel.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parallel.dir/build.make tests/CMakeFiles/test_parallel.dir/test_parallel.cpp.i
+.PHONY : test_parallel.cpp.i
+
+test_parallel.s: test_parallel.cpp.s
+.PHONY : test_parallel.s
+
+# target to generate assembly for a file
+test_parallel.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parallel.dir/build.make tests/CMakeFiles/test_parallel.dir/test_parallel.cpp.s
+.PHONY : test_parallel.cpp.s
 
 test_phase3.o: test_phase3.cpp.o
 .PHONY : test_phase3.o
@@ -326,12 +364,16 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test_layers"
+	@echo "... test_parallel"
 	@echo "... test_phase3"
 	@echo "... test_phase4"
 	@echo "... test_tensor"
 	@echo "... test_layers.o"
 	@echo "... test_layers.i"
 	@echo "... test_layers.s"
+	@echo "... test_parallel.o"
+	@echo "... test_parallel.i"
+	@echo "... test_parallel.s"
 	@echo "... test_phase3.o"
 	@echo "... test_phase3.i"
 	@echo "... test_phase3.s"

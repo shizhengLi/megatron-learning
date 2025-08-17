@@ -214,6 +214,19 @@ megatron_transformer/fast:
 .PHONY : megatron_transformer/fast
 
 #=============================================================================
+# Target rules for targets named megatron_distributed
+
+# Build rule for target.
+megatron_distributed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 megatron_distributed
+.PHONY : megatron_distributed
+
+# fast build rule for target.
+megatron_distributed/fast:
+	$(MAKE) $(MAKESILENT) -f distributed/CMakeFiles/megatron_distributed.dir/build.make distributed/CMakeFiles/megatron_distributed.dir/build
+.PHONY : megatron_distributed/fast
+
+#=============================================================================
 # Target rules for targets named test_tensor
 
 # Build rule for target.
@@ -265,6 +278,19 @@ test_phase4/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_phase4.dir/build.make tests/CMakeFiles/test_phase4.dir/build
 .PHONY : test_phase4/fast
 
+#=============================================================================
+# Target rules for targets named test_parallel
+
+# Build rule for target.
+test_parallel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_parallel
+.PHONY : test_parallel
+
+# fast build rule for target.
+test_parallel/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parallel.dir/build.make tests/CMakeFiles/test_parallel.dir/build
+.PHONY : test_parallel/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -278,10 +304,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... megatron_core"
+	@echo "... megatron_distributed"
 	@echo "... megatron_gpt"
 	@echo "... megatron_models"
 	@echo "... megatron_transformer"
 	@echo "... test_layers"
+	@echo "... test_parallel"
 	@echo "... test_phase3"
 	@echo "... test_phase4"
 	@echo "... test_tensor"

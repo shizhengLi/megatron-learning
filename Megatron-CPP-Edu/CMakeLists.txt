@@ -26,8 +26,8 @@ option(BUILD_EXAMPLES "Build examples" ON)
 # Add subdirectories
 add_subdirectory(core)
 add_subdirectory(models)
+add_subdirectory(distributed)
 # add_subdirectory(training)
-# add_subdirectory(distributed)
 
 if(BUILD_TESTS)
     add_subdirectory(tests)

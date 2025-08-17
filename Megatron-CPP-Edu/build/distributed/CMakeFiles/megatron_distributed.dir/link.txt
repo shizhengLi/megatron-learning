@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmegatron_distributed.a CMakeFiles/megatron_distributed.dir/communication.cpp.o
+/usr/bin/ranlib libmegatron_distributed.a

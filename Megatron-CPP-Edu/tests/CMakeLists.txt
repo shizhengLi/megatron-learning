@@ -105,3 +105,31 @@ else()
     target_link_libraries(test_phase4_main PRIVATE megatron_core megatron_models)
     add_test(NAME test_phase4 COMMAND test_phase4_main)
 endif()
+
+# Parallel computing tests
+add_executable(test_parallel test_parallel.cpp)
+target_link_libraries(test_parallel 
+    PRIVATE megatron_core
+    PRIVATE megatron_parallel
+    PRIVATE megatron_distributed
+    PRIVATE megatron_models
+)
+if(GTest_FOUND)
+    target_link_libraries(test_parallel 
+        PRIVATE GTest::gtest 
+        PRIVATE GTest::gtest_main
+    )
+endif()
+
+# Add test to CTest
+if(GTest_FOUND)
+    add_test(NAME test_parallel COMMAND test_parallel)
+    # Test discovery
+    include(GoogleTest)
+    gtest_discover_tests(test_parallel)
+else()
+    # Custom main function when GTest is not available
+    add_executable(test_parallel_main test_parallel_main.cpp)
+    target_link_libraries(test_parallel_main PRIVATE megatron_core megatron_parallel megatron_distributed megatron_models)
+    add_test(NAME test_parallel COMMAND test_parallel_main)
+endif()

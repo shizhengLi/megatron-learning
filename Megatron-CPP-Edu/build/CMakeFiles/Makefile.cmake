@@ -17,6 +17,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.24.3/CMakeSystem.cmake"
   "CMakeFiles/FindMPI/test_mpi.cpp"
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/CMakeLists.txt"
+  "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/distributed/CMakeLists.txt"
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/models/CMakeLists.txt"
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/models/gpt/CMakeLists.txt"
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/models/transformer/CMakeLists.txt"
@@ -71,6 +72,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "models/CMakeFiles/CMakeDirectoryInformation.cmake"
   "models/gpt/CMakeFiles/CMakeDirectoryInformation.cmake"
   "models/transformer/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "distributed/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -80,8 +82,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "models/CMakeFiles/megatron_models.dir/DependInfo.cmake"
   "models/gpt/CMakeFiles/megatron_gpt.dir/DependInfo.cmake"
   "models/transformer/CMakeFiles/megatron_transformer.dir/DependInfo.cmake"
+  "distributed/CMakeFiles/megatron_distributed.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_tensor.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_layers.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_phase3.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_phase4.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_parallel.dir/DependInfo.cmake"
   )

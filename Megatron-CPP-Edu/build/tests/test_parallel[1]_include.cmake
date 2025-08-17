@@ -1,0 +1,5 @@
+if(EXISTS "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/tests/test_parallel[1]_tests.cmake")
+  include("/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/tests/test_parallel[1]_tests.cmake")
+else()
+  add_test(test_parallel_NOT_BUILT test_parallel_NOT_BUILT)
+endif()
