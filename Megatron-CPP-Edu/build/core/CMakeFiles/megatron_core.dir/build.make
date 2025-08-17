@@ -153,6 +153,104 @@ core/CMakeFiles/megatron_core.dir/layers/embedding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/layers/embedding.cpp.s"
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/embedding.cpp -o CMakeFiles/megatron_core.dir/layers/embedding.cpp.s
 
+core/CMakeFiles/megatron_core.dir/layers/attention.cpp.o: core/CMakeFiles/megatron_core.dir/flags.make
+core/CMakeFiles/megatron_core.dir/layers/attention.cpp.o: /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/attention.cpp
+core/CMakeFiles/megatron_core.dir/layers/attention.cpp.o: core/CMakeFiles/megatron_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object core/CMakeFiles/megatron_core.dir/layers/attention.cpp.o"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/megatron_core.dir/layers/attention.cpp.o -MF CMakeFiles/megatron_core.dir/layers/attention.cpp.o.d -o CMakeFiles/megatron_core.dir/layers/attention.cpp.o -c /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/attention.cpp
+
+core/CMakeFiles/megatron_core.dir/layers/attention.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/megatron_core.dir/layers/attention.cpp.i"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/attention.cpp > CMakeFiles/megatron_core.dir/layers/attention.cpp.i
+
+core/CMakeFiles/megatron_core.dir/layers/attention.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/layers/attention.cpp.s"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/attention.cpp -o CMakeFiles/megatron_core.dir/layers/attention.cpp.s
+
+core/CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.o: core/CMakeFiles/megatron_core.dir/flags.make
+core/CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.o: /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/transformer_block.cpp
+core/CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.o: core/CMakeFiles/megatron_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object core/CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.o"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.o -MF CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.o.d -o CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.o -c /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/transformer_block.cpp
+
+core/CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.i"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/transformer_block.cpp > CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.i
+
+core/CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.s"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/transformer_block.cpp -o CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.s
+
+core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o: core/CMakeFiles/megatron_core.dir/flags.make
+core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o: /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/optimizer.cpp
+core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o: core/CMakeFiles/megatron_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o -MF CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o.d -o CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o -c /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/optimizer.cpp
+
+core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.i"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/optimizer.cpp > CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.i
+
+core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.s"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/optimizer.cpp -o CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.s
+
+core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o: core/CMakeFiles/megatron_core.dir/flags.make
+core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o: /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/sgd.cpp
+core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o: core/CMakeFiles/megatron_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o -MF CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o.d -o CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o -c /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/sgd.cpp
+
+core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.i"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/sgd.cpp > CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.i
+
+core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.s"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/sgd.cpp -o CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.s
+
+core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o: core/CMakeFiles/megatron_core.dir/flags.make
+core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o: /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/adamw.cpp
+core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o: core/CMakeFiles/megatron_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o -MF CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o.d -o CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o -c /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/adamw.cpp
+
+core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.i"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/adamw.cpp > CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.i
+
+core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.s"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/adamw.cpp -o CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.s
+
+core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o: core/CMakeFiles/megatron_core.dir/flags.make
+core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o: /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/loss/cross_entropy_loss.cpp
+core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o: core/CMakeFiles/megatron_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o -MF CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o.d -o CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o -c /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/loss/cross_entropy_loss.cpp
+
+core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.i"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/loss/cross_entropy_loss.cpp > CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.i
+
+core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.s"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/loss/cross_entropy_loss.cpp -o CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.s
+
+core/CMakeFiles/megatron_core.dir/training/trainer.cpp.o: core/CMakeFiles/megatron_core.dir/flags.make
+core/CMakeFiles/megatron_core.dir/training/trainer.cpp.o: /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/training/trainer.cpp
+core/CMakeFiles/megatron_core.dir/training/trainer.cpp.o: core/CMakeFiles/megatron_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object core/CMakeFiles/megatron_core.dir/training/trainer.cpp.o"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/megatron_core.dir/training/trainer.cpp.o -MF CMakeFiles/megatron_core.dir/training/trainer.cpp.o.d -o CMakeFiles/megatron_core.dir/training/trainer.cpp.o -c /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/training/trainer.cpp
+
+core/CMakeFiles/megatron_core.dir/training/trainer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/megatron_core.dir/training/trainer.cpp.i"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/training/trainer.cpp > CMakeFiles/megatron_core.dir/training/trainer.cpp.i
+
+core/CMakeFiles/megatron_core.dir/training/trainer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/training/trainer.cpp.s"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/training/trainer.cpp -o CMakeFiles/megatron_core.dir/training/trainer.cpp.s
+
 # Object files for target megatron_core
 megatron_core_OBJECTS = \
 "CMakeFiles/megatron_core.dir/tensor/tensor.cpp.o" \
@@ -160,7 +258,14 @@ megatron_core_OBJECTS = \
 "CMakeFiles/megatron_core.dir/layers/linear.cpp.o" \
 "CMakeFiles/megatron_core.dir/layers/layer_norm.cpp.o" \
 "CMakeFiles/megatron_core.dir/layers/dropout.cpp.o" \
-"CMakeFiles/megatron_core.dir/layers/embedding.cpp.o"
+"CMakeFiles/megatron_core.dir/layers/embedding.cpp.o" \
+"CMakeFiles/megatron_core.dir/layers/attention.cpp.o" \
+"CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.o" \
+"CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o" \
+"CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o" \
+"CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o" \
+"CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o" \
+"CMakeFiles/megatron_core.dir/training/trainer.cpp.o"
 
 # External object files for target megatron_core
 megatron_core_EXTERNAL_OBJECTS =
@@ -171,9 +276,16 @@ core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/layers/linear.cpp.o
 core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/layers/layer_norm.cpp.o
 core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/layers/dropout.cpp.o
 core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/layers/embedding.cpp.o
+core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/layers/attention.cpp.o
+core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.o
+core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o
+core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o
+core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o
+core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o
+core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/training/trainer.cpp.o
 core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/build.make
 core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libmegatron_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libmegatron_core.a"
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && $(CMAKE_COMMAND) -P CMakeFiles/megatron_core.dir/cmake_clean_target.cmake
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/megatron_core.dir/link.txt --verbose=$(VERBOSE)
 

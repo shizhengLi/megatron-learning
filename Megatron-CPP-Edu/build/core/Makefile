@@ -175,6 +175,30 @@ megatron_core/fast:
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/build
 .PHONY : megatron_core/fast
 
+layers/attention.o: layers/attention.cpp.o
+.PHONY : layers/attention.o
+
+# target to build an object file
+layers/attention.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/attention.cpp.o
+.PHONY : layers/attention.cpp.o
+
+layers/attention.i: layers/attention.cpp.i
+.PHONY : layers/attention.i
+
+# target to preprocess a source file
+layers/attention.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/attention.cpp.i
+.PHONY : layers/attention.cpp.i
+
+layers/attention.s: layers/attention.cpp.s
+.PHONY : layers/attention.s
+
+# target to generate assembly for a file
+layers/attention.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/attention.cpp.s
+.PHONY : layers/attention.cpp.s
+
 layers/dropout.o: layers/dropout.cpp.o
 .PHONY : layers/dropout.o
 
@@ -295,6 +319,126 @@ layers/linear.cpp.s:
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/linear.cpp.s
 .PHONY : layers/linear.cpp.s
 
+layers/transformer_block.o: layers/transformer_block.cpp.o
+.PHONY : layers/transformer_block.o
+
+# target to build an object file
+layers/transformer_block.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.o
+.PHONY : layers/transformer_block.cpp.o
+
+layers/transformer_block.i: layers/transformer_block.cpp.i
+.PHONY : layers/transformer_block.i
+
+# target to preprocess a source file
+layers/transformer_block.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.i
+.PHONY : layers/transformer_block.cpp.i
+
+layers/transformer_block.s: layers/transformer_block.cpp.s
+.PHONY : layers/transformer_block.s
+
+# target to generate assembly for a file
+layers/transformer_block.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/layers/transformer_block.cpp.s
+.PHONY : layers/transformer_block.cpp.s
+
+loss/cross_entropy_loss.o: loss/cross_entropy_loss.cpp.o
+.PHONY : loss/cross_entropy_loss.o
+
+# target to build an object file
+loss/cross_entropy_loss.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o
+.PHONY : loss/cross_entropy_loss.cpp.o
+
+loss/cross_entropy_loss.i: loss/cross_entropy_loss.cpp.i
+.PHONY : loss/cross_entropy_loss.i
+
+# target to preprocess a source file
+loss/cross_entropy_loss.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.i
+.PHONY : loss/cross_entropy_loss.cpp.i
+
+loss/cross_entropy_loss.s: loss/cross_entropy_loss.cpp.s
+.PHONY : loss/cross_entropy_loss.s
+
+# target to generate assembly for a file
+loss/cross_entropy_loss.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.s
+.PHONY : loss/cross_entropy_loss.cpp.s
+
+optimizers/adamw.o: optimizers/adamw.cpp.o
+.PHONY : optimizers/adamw.o
+
+# target to build an object file
+optimizers/adamw.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o
+.PHONY : optimizers/adamw.cpp.o
+
+optimizers/adamw.i: optimizers/adamw.cpp.i
+.PHONY : optimizers/adamw.i
+
+# target to preprocess a source file
+optimizers/adamw.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.i
+.PHONY : optimizers/adamw.cpp.i
+
+optimizers/adamw.s: optimizers/adamw.cpp.s
+.PHONY : optimizers/adamw.s
+
+# target to generate assembly for a file
+optimizers/adamw.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.s
+.PHONY : optimizers/adamw.cpp.s
+
+optimizers/optimizer.o: optimizers/optimizer.cpp.o
+.PHONY : optimizers/optimizer.o
+
+# target to build an object file
+optimizers/optimizer.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o
+.PHONY : optimizers/optimizer.cpp.o
+
+optimizers/optimizer.i: optimizers/optimizer.cpp.i
+.PHONY : optimizers/optimizer.i
+
+# target to preprocess a source file
+optimizers/optimizer.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.i
+.PHONY : optimizers/optimizer.cpp.i
+
+optimizers/optimizer.s: optimizers/optimizer.cpp.s
+.PHONY : optimizers/optimizer.s
+
+# target to generate assembly for a file
+optimizers/optimizer.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.s
+.PHONY : optimizers/optimizer.cpp.s
+
+optimizers/sgd.o: optimizers/sgd.cpp.o
+.PHONY : optimizers/sgd.o
+
+# target to build an object file
+optimizers/sgd.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o
+.PHONY : optimizers/sgd.cpp.o
+
+optimizers/sgd.i: optimizers/sgd.cpp.i
+.PHONY : optimizers/sgd.i
+
+# target to preprocess a source file
+optimizers/sgd.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.i
+.PHONY : optimizers/sgd.cpp.i
+
+optimizers/sgd.s: optimizers/sgd.cpp.s
+.PHONY : optimizers/sgd.s
+
+# target to generate assembly for a file
+optimizers/sgd.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.s
+.PHONY : optimizers/sgd.cpp.s
+
 tensor/tensor.o: tensor/tensor.cpp.o
 .PHONY : tensor/tensor.o
 
@@ -319,6 +463,30 @@ tensor/tensor.cpp.s:
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/tensor/tensor.cpp.s
 .PHONY : tensor/tensor.cpp.s
 
+training/trainer.o: training/trainer.cpp.o
+.PHONY : training/trainer.o
+
+# target to build an object file
+training/trainer.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/training/trainer.cpp.o
+.PHONY : training/trainer.cpp.o
+
+training/trainer.i: training/trainer.cpp.i
+.PHONY : training/trainer.i
+
+# target to preprocess a source file
+training/trainer.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/training/trainer.cpp.i
+.PHONY : training/trainer.cpp.i
+
+training/trainer.s: training/trainer.cpp.s
+.PHONY : training/trainer.s
+
+# target to generate assembly for a file
+training/trainer.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/training/trainer.cpp.s
+.PHONY : training/trainer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -332,6 +500,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... megatron_core"
+	@echo "... layers/attention.o"
+	@echo "... layers/attention.i"
+	@echo "... layers/attention.s"
 	@echo "... layers/dropout.o"
 	@echo "... layers/dropout.i"
 	@echo "... layers/dropout.s"
@@ -347,9 +518,27 @@ help:
 	@echo "... layers/linear.o"
 	@echo "... layers/linear.i"
 	@echo "... layers/linear.s"
+	@echo "... layers/transformer_block.o"
+	@echo "... layers/transformer_block.i"
+	@echo "... layers/transformer_block.s"
+	@echo "... loss/cross_entropy_loss.o"
+	@echo "... loss/cross_entropy_loss.i"
+	@echo "... loss/cross_entropy_loss.s"
+	@echo "... optimizers/adamw.o"
+	@echo "... optimizers/adamw.i"
+	@echo "... optimizers/adamw.s"
+	@echo "... optimizers/optimizer.o"
+	@echo "... optimizers/optimizer.i"
+	@echo "... optimizers/optimizer.s"
+	@echo "... optimizers/sgd.o"
+	@echo "... optimizers/sgd.i"
+	@echo "... optimizers/sgd.s"
 	@echo "... tensor/tensor.o"
 	@echo "... tensor/tensor.i"
 	@echo "... tensor/tensor.s"
+	@echo "... training/trainer.o"
+	@echo "... training/trainer.i"
+	@echo "... training/trainer.s"
 .PHONY : help
 
 

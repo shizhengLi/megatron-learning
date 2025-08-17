@@ -346,6 +346,14 @@ Tensor Tensor::max(int dim) const {
     }
 }
 
+Tensor Tensor::sqrt() const {
+    Tensor result(shape_, dtype_);
+    for (int i = 0; i < size_; ++i) {
+        result.data()[i] = std::sqrt(data()[i]);
+    }
+    return result;
+}
+
 // Activation functions
 Tensor Tensor::relu() const {
     Tensor result(shape_, dtype_);

@@ -73,4 +73,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "core/CMakeFiles/megatron_core.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_tensor.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_layers.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_phase3.dir/DependInfo.cmake"
   )

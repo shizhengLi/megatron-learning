@@ -54,6 +54,7 @@ public:
     Tensor sum(int dim = -1) const;
     Tensor mean(int dim = -1) const;
     Tensor max(int dim = -1) const;
+    Tensor sqrt() const;
     
     // Activation functions
     Tensor relu() const;

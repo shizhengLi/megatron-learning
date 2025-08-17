@@ -54,3 +54,28 @@ else()
     target_link_libraries(test_layers_main PRIVATE megatron_core)
     add_test(NAME test_layers COMMAND test_layers_main)
 endif()
+
+# Phase 3 tests
+add_executable(test_phase3 test_phase3.cpp)
+target_link_libraries(test_phase3 
+    PRIVATE megatron_core
+)
+if(GTest_FOUND)
+    target_link_libraries(test_phase3 
+        PRIVATE GTest::gtest 
+        PRIVATE GTest::gtest_main
+    )
+endif()
+
+# Add test to CTest
+if(GTest_FOUND)
+    add_test(NAME test_phase3 COMMAND test_phase3)
+    # Test discovery
+    include(GoogleTest)
+    gtest_discover_tests(test_phase3)
+else()
+    # Custom main function when GTest is not available
+    add_executable(test_phase3_main test_phase3_main.cpp)
+    target_link_libraries(test_phase3_main PRIVATE megatron_core)
+    add_test(NAME test_phase3 COMMAND test_phase3_main)
+endif()

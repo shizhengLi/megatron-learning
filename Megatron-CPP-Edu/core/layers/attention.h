@@ -1,6 +1,8 @@
 #pragma once
 
 #include "layer.h"
+#include "linear.h"
+#include "dropout.h"
 #include <memory>
 #include <vector>
 

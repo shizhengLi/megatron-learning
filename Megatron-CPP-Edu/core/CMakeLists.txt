@@ -5,6 +5,13 @@ add_library(megatron_core
     layers/layer_norm.cpp
     layers/dropout.cpp
     layers/embedding.cpp
+    layers/attention.cpp
+    layers/transformer_block.cpp
+    optimizers/optimizer.cpp
+    optimizers/sgd.cpp
+    optimizers/adamw.cpp
+    loss/cross_entropy_loss.cpp
+    training/trainer.cpp
 )
 
 # Include directories
