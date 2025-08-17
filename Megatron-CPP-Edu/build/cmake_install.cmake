@@ -49,6 +49,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/models/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/tests/cmake_install.cmake")
 endif()
 

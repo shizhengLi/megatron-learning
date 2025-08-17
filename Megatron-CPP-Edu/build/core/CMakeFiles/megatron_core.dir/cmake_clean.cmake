@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/megatron_core.dir/data/dataset.cpp.o"
+  "CMakeFiles/megatron_core.dir/data/dataset.cpp.o.d"
+  "CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o"
+  "CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o.d"
   "CMakeFiles/megatron_core.dir/layers/attention.cpp.o"
   "CMakeFiles/megatron_core.dir/layers/attention.cpp.o.d"
   "CMakeFiles/megatron_core.dir/layers/dropout.cpp.o"
@@ -21,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o.d"
   "CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o"
   "CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o.d"
+  "CMakeFiles/megatron_core.dir/performance/performance.cpp.o"
+  "CMakeFiles/megatron_core.dir/performance/performance.cpp.o.d"
   "CMakeFiles/megatron_core.dir/tensor/tensor.cpp.o"
   "CMakeFiles/megatron_core.dir/tensor/tensor.cpp.o.d"
   "CMakeFiles/megatron_core.dir/training/trainer.cpp.o"

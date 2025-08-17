@@ -175,6 +175,45 @@ megatron_core/fast:
 .PHONY : megatron_core/fast
 
 #=============================================================================
+# Target rules for targets named megatron_models
+
+# Build rule for target.
+megatron_models: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 megatron_models
+.PHONY : megatron_models
+
+# fast build rule for target.
+megatron_models/fast:
+	$(MAKE) $(MAKESILENT) -f models/CMakeFiles/megatron_models.dir/build.make models/CMakeFiles/megatron_models.dir/build
+.PHONY : megatron_models/fast
+
+#=============================================================================
+# Target rules for targets named megatron_gpt
+
+# Build rule for target.
+megatron_gpt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 megatron_gpt
+.PHONY : megatron_gpt
+
+# fast build rule for target.
+megatron_gpt/fast:
+	$(MAKE) $(MAKESILENT) -f models/gpt/CMakeFiles/megatron_gpt.dir/build.make models/gpt/CMakeFiles/megatron_gpt.dir/build
+.PHONY : megatron_gpt/fast
+
+#=============================================================================
+# Target rules for targets named megatron_transformer
+
+# Build rule for target.
+megatron_transformer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 megatron_transformer
+.PHONY : megatron_transformer
+
+# fast build rule for target.
+megatron_transformer/fast:
+	$(MAKE) $(MAKESILENT) -f models/transformer/CMakeFiles/megatron_transformer.dir/build.make models/transformer/CMakeFiles/megatron_transformer.dir/build
+.PHONY : megatron_transformer/fast
+
+#=============================================================================
 # Target rules for targets named test_tensor
 
 # Build rule for target.
@@ -213,6 +252,19 @@ test_phase3/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_phase3.dir/build.make tests/CMakeFiles/test_phase3.dir/build
 .PHONY : test_phase3/fast
 
+#=============================================================================
+# Target rules for targets named test_phase4
+
+# Build rule for target.
+test_phase4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_phase4
+.PHONY : test_phase4
+
+# fast build rule for target.
+test_phase4/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_phase4.dir/build.make tests/CMakeFiles/test_phase4.dir/build
+.PHONY : test_phase4/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -226,8 +278,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... megatron_core"
+	@echo "... megatron_gpt"
+	@echo "... megatron_models"
+	@echo "... megatron_transformer"
 	@echo "... test_layers"
 	@echo "... test_phase3"
+	@echo "... test_phase4"
 	@echo "... test_tensor"
 .PHONY : help
 

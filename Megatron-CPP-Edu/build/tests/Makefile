@@ -203,6 +203,20 @@ test_phase3/fast:
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_phase3.dir/build.make tests/CMakeFiles/test_phase3.dir/build
 .PHONY : test_phase3/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_phase4.dir/rule:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_phase4.dir/rule
+.PHONY : tests/CMakeFiles/test_phase4.dir/rule
+
+# Convenience name for target.
+test_phase4: tests/CMakeFiles/test_phase4.dir/rule
+.PHONY : test_phase4
+
+# fast build rule for target.
+test_phase4/fast:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_phase4.dir/build.make tests/CMakeFiles/test_phase4.dir/build
+.PHONY : test_phase4/fast
+
 test_layers.o: test_layers.cpp.o
 .PHONY : test_layers.o
 
@@ -251,6 +265,30 @@ test_phase3.cpp.s:
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_phase3.dir/build.make tests/CMakeFiles/test_phase3.dir/test_phase3.cpp.s
 .PHONY : test_phase3.cpp.s
 
+test_phase4.o: test_phase4.cpp.o
+.PHONY : test_phase4.o
+
+# target to build an object file
+test_phase4.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_phase4.dir/build.make tests/CMakeFiles/test_phase4.dir/test_phase4.cpp.o
+.PHONY : test_phase4.cpp.o
+
+test_phase4.i: test_phase4.cpp.i
+.PHONY : test_phase4.i
+
+# target to preprocess a source file
+test_phase4.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_phase4.dir/build.make tests/CMakeFiles/test_phase4.dir/test_phase4.cpp.i
+.PHONY : test_phase4.cpp.i
+
+test_phase4.s: test_phase4.cpp.s
+.PHONY : test_phase4.s
+
+# target to generate assembly for a file
+test_phase4.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_phase4.dir/build.make tests/CMakeFiles/test_phase4.dir/test_phase4.cpp.s
+.PHONY : test_phase4.cpp.s
+
 test_tensor.o: test_tensor.cpp.o
 .PHONY : test_tensor.o
 
@@ -289,6 +327,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_layers"
 	@echo "... test_phase3"
+	@echo "... test_phase4"
 	@echo "... test_tensor"
 	@echo "... test_layers.o"
 	@echo "... test_layers.i"
@@ -296,6 +335,9 @@ help:
 	@echo "... test_phase3.o"
 	@echo "... test_phase3.i"
 	@echo "... test_phase3.s"
+	@echo "... test_phase4.o"
+	@echo "... test_phase4.i"
+	@echo "... test_phase4.s"
 	@echo "... test_tensor.o"
 	@echo "... test_tensor.i"
 	@echo "... test_tensor.s"

@@ -1,4 +1,5 @@
 #include "transformer_block.h"
+#include <iostream>
 #include <vector>
 
 namespace megatron {
@@ -48,10 +49,10 @@ Tensor TransformerBlock::forward(const Tensor& input) {
     Tensor ff1_output = ff1_.forward(norm2_input);
     
     // 3. Activation (ReLU)
-    Tensor ff1_activated = ff1_output.relu();
+    ff1_activated_ = ff1_output.relu();
     
     // 4. Second linear layer
-    ff_output_ = ff2_.forward(ff1_activated);
+    ff_output_ = ff2_.forward(ff1_activated_);
     
     // 5. Dropout
     if (use_dropout_) {
@@ -66,8 +67,6 @@ Tensor TransformerBlock::forward(const Tensor& input) {
 }
 
 Tensor TransformerBlock::backward(const Tensor& grad_output) {
-    // grad_output shape: [batch_size, seq_len, embed_dim]
-    
     // Backward through second residual connection
     Tensor grad_norm2 = grad_output;
     Tensor grad_ff_residual = grad_output;
@@ -83,7 +82,7 @@ Tensor TransformerBlock::backward(const Tensor& grad_output) {
     // Backward through ReLU (gradient is 1 for positive inputs, 0 for negative)
     Tensor grad_ff1_activated = grad_ff2;
     for (int i = 0; i < grad_ff1_activated.size(); ++i) {
-        if (ff_output_[i] <= 0.0f) {
+        if (ff1_activated_[i] <= 0.0f) {
             grad_ff1_activated[i] = 0.0f;
         }
     }

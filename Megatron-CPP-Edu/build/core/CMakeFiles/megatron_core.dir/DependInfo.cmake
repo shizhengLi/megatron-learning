@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/data/dataset.cpp" "core/CMakeFiles/megatron_core.dir/data/dataset.cpp.o" "gcc" "core/CMakeFiles/megatron_core.dir/data/dataset.cpp.o.d"
+  "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/evaluation/metrics.cpp" "core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o" "gcc" "core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o.d"
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/attention.cpp" "core/CMakeFiles/megatron_core.dir/layers/attention.cpp.o" "gcc" "core/CMakeFiles/megatron_core.dir/layers/attention.cpp.o.d"
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/dropout.cpp" "core/CMakeFiles/megatron_core.dir/layers/dropout.cpp.o" "gcc" "core/CMakeFiles/megatron_core.dir/layers/dropout.cpp.o.d"
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/layers/embedding.cpp" "core/CMakeFiles/megatron_core.dir/layers/embedding.cpp.o" "gcc" "core/CMakeFiles/megatron_core.dir/layers/embedding.cpp.o.d"
@@ -19,6 +21,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/adamw.cpp" "core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o" "gcc" "core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o.d"
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/optimizer.cpp" "core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o" "gcc" "core/CMakeFiles/megatron_core.dir/optimizers/optimizer.cpp.o.d"
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/optimizers/sgd.cpp" "core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o" "gcc" "core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o.d"
+  "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/performance/performance.cpp" "core/CMakeFiles/megatron_core.dir/performance/performance.cpp.o" "gcc" "core/CMakeFiles/megatron_core.dir/performance/performance.cpp.o.d"
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/tensor/tensor.cpp" "core/CMakeFiles/megatron_core.dir/tensor/tensor.cpp.o" "gcc" "core/CMakeFiles/megatron_core.dir/tensor/tensor.cpp.o.d"
   "/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/training/trainer.cpp" "core/CMakeFiles/megatron_core.dir/training/trainer.cpp.o" "gcc" "core/CMakeFiles/megatron_core.dir/training/trainer.cpp.o.d"
   )

@@ -1,4 +1,5 @@
 #include "linear.h"
+#include <iostream>
 #include <cmath>
 #include <random>
 
@@ -25,36 +26,90 @@ Linear::Linear(int in_features, int out_features, bool bias, const std::string& 
 }
 
 Tensor Linear::forward(const Tensor& input) {
-    // Input shape: [batch_size, in_features]
+    // Input shape: [batch_size, ..., in_features]
     // Weight shape: [out_features, in_features]
-    // Output shape: [batch_size, out_features]
+    // Output shape: [batch_size, ..., out_features]
     
     input_ = input;  // Store input for backward pass
     
-    // Compute output: input @ weight.T + bias
-    output_ = input.matmul(weight_.transpose());
+    // Reshape input to 2D if needed: [batch_size * ..., in_features]
+    Tensor input_2d = input;
+    std::vector<int> original_shape = input.shape();
+    
+    if (input.dim() > 2) {
+        // Flatten all dimensions except the last one
+        int flattened_size = 1;
+        for (int i = 0; i < input.dim() - 1; ++i) {
+            flattened_size *= input.shape()[i];
+        }
+        input_2d = input.view({flattened_size, input.shape().back()});
+    }
+    
+    // Compute output: input_2d @ weight.T + bias
+    Tensor output_2d = input_2d.matmul(weight_.transpose());
     
     if (has_bias_) {
         // Add bias to each row
-        for (int i = 0; i < output_.shape()[0]; ++i) {
-            for (int j = 0; j < output_.shape()[1]; ++j) {
-                output_[i * output_.shape()[1] + j] += bias_[j];
+        for (int i = 0; i < output_2d.shape()[0]; ++i) {
+            for (int j = 0; j < output_2d.shape()[1]; ++j) {
+                output_2d[i * output_2d.shape()[1] + j] += bias_[j];
             }
         }
+    }
+    
+    // Reshape output back to original dimensions (except last one)
+    if (input.dim() > 2) {
+        std::vector<int> output_shape = original_shape;
+        output_shape.back() = out_features_;
+        
+        // Manually reshape instead of using view to avoid potential issues
+        Tensor output_reshaped(output_shape);
+        for (int i = 0; i < output_reshaped.size(); ++i) {
+            output_reshaped[i] = output_2d[i];
+        }
+        output_ = output_reshaped;
+    } else {
+        output_ = output_2d;
     }
     
     return output_;
 }
 
 Tensor Linear::backward(const Tensor& grad_output) {
-    // grad_output shape: [batch_size, out_features]
-    // Returns gradients for input: [batch_size, in_features]
+    // grad_output shape: [batch_size, ..., out_features]
+    // Returns gradients for input: [batch_size, ..., in_features]
+    
+    // Reshape grad_output to 2D if needed
+    Tensor grad_output_2d = grad_output;
+    
+    if (grad_output.dim() > 2) {
+        // Flatten all dimensions except the last one
+        int flattened_size = 1;
+        for (int i = 0; i < grad_output.dim() - 1; ++i) {
+            flattened_size *= grad_output.shape()[i];
+        }
+        grad_output_2d = grad_output.view({flattened_size, grad_output.shape().back()});
+    }
     
     // Compute gradients
-    compute_gradients(grad_output);
+    compute_gradients(grad_output_2d);
     
-    // Compute input gradients: grad_output @ weight
-    Tensor grad_input = grad_output.matmul(weight_);
+    // Compute input gradients: grad_output_2d @ weight
+    Tensor grad_input_2d = grad_output_2d.matmul(weight_);
+    
+    // Reshape grad_input back to original dimensions
+    Tensor grad_input = grad_input_2d;
+    if (grad_output.dim() > 2) {
+        std::vector<int> grad_input_shape = grad_output.shape();
+        grad_input_shape.back() = in_features_;
+        
+        // Manually reshape instead of using view to avoid potential issues
+        Tensor grad_input_reshaped(grad_input_shape);
+        for (int i = 0; i < grad_input_reshaped.size(); ++i) {
+            grad_input_reshaped[i] = grad_input_2d[i];
+        }
+        grad_input = grad_input_reshaped;
+    }
     
     return grad_input;
 }
@@ -126,10 +181,21 @@ void Linear::zero_grad() {
 
 void Linear::compute_gradients(const Tensor& grad_output) {
     // grad_output shape: [batch_size, out_features]
-    // input_ shape: [batch_size, in_features]
+    // input_ shape: original input (could be 3D)
     
-    // Compute weight gradients: grad_output.T @ input
-    Tensor grad_weight = grad_output.transpose().matmul(input_);
+    // Reshape input_ to 2D if needed for gradient computation
+    Tensor input_2d = input_;
+    if (input_.dim() > 2) {
+        // Flatten all dimensions except the last one
+        int flattened_size = 1;
+        for (int i = 0; i < input_.dim() - 1; ++i) {
+            flattened_size *= input_.shape()[i];
+        }
+        input_2d = input_.view({flattened_size, input_.shape().back()});
+    }
+    
+    // Compute weight gradients: grad_output.T @ input_2d
+    Tensor grad_weight = grad_output.transpose().matmul(input_2d);
     weight_grad_ = grad_weight;
     
     // Compute bias gradients: sum grad_output along batch dimension

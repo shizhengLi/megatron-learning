@@ -26,7 +26,7 @@ TransformerClassifier::TransformerClassifier(int vocab_size, int max_seq_len, in
     
     // Create transformer blocks
     transformer_blocks_.reserve(num_layers);
-    for (int i = 0; i < num_layers; ++i) {
+    for (int i = 0; i < num_layers_; ++i) {
         transformer_blocks_.push_back(std::make_shared<TransformerBlock>(
             embed_dim, num_heads, ff_dim, use_dropout, dropout_prob, 
             name + "_block_" + std::to_string(i)));
@@ -57,7 +57,7 @@ Tensor TransformerClassifier::forward(const Tensor& input) {
     layer_outputs_.clear();
     layer_outputs_.reserve(num_layers_);
     
-    for (int i = 0; i < num_layers; ++i) {
+    for (int i = 0; i < num_layers_; ++i) {
         x = transformer_blocks_[i]->forward(x);
         layer_outputs_.push_back(x);
     }

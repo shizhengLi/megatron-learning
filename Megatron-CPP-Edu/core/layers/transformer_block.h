@@ -52,6 +52,7 @@ private:
     // Cache for forward/backward pass
     Tensor input_;
     Tensor attn_output_;
+    Tensor ff1_activated_;
     Tensor ff_output_;
     Tensor norm1_output_;
     Tensor norm2_output_;

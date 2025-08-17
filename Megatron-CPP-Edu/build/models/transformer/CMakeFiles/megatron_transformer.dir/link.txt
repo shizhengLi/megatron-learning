@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmegatron_transformer.a CMakeFiles/megatron_transformer.dir/transformer_classifier.cpp.o
+/usr/bin/ranlib libmegatron_transformer.a

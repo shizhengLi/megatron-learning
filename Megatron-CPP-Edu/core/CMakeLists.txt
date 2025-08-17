@@ -12,6 +12,9 @@ add_library(megatron_core
     optimizers/adamw.cpp
     loss/cross_entropy_loss.cpp
     training/trainer.cpp
+    data/dataset.cpp
+    evaluation/metrics.cpp
+    performance/performance.cpp
 )
 
 # Include directories

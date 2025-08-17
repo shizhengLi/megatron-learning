@@ -1,5 +1,6 @@
 # Transformer Models CMakeLists.txt
 add_library(megatron_transformer
+    transformer_classifier.cpp
 )
 
 target_include_directories(megatron_transformer
@@ -9,5 +10,4 @@ target_include_directories(megatron_transformer
 
 target_link_libraries(megatron_transformer
     PUBLIC megatron_core
-    PUBLIC megatron_training
 )

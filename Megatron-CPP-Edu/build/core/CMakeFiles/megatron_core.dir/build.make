@@ -251,6 +251,48 @@ core/CMakeFiles/megatron_core.dir/training/trainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/training/trainer.cpp.s"
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/training/trainer.cpp -o CMakeFiles/megatron_core.dir/training/trainer.cpp.s
 
+core/CMakeFiles/megatron_core.dir/data/dataset.cpp.o: core/CMakeFiles/megatron_core.dir/flags.make
+core/CMakeFiles/megatron_core.dir/data/dataset.cpp.o: /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/data/dataset.cpp
+core/CMakeFiles/megatron_core.dir/data/dataset.cpp.o: core/CMakeFiles/megatron_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object core/CMakeFiles/megatron_core.dir/data/dataset.cpp.o"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/megatron_core.dir/data/dataset.cpp.o -MF CMakeFiles/megatron_core.dir/data/dataset.cpp.o.d -o CMakeFiles/megatron_core.dir/data/dataset.cpp.o -c /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/data/dataset.cpp
+
+core/CMakeFiles/megatron_core.dir/data/dataset.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/megatron_core.dir/data/dataset.cpp.i"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/data/dataset.cpp > CMakeFiles/megatron_core.dir/data/dataset.cpp.i
+
+core/CMakeFiles/megatron_core.dir/data/dataset.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/data/dataset.cpp.s"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/data/dataset.cpp -o CMakeFiles/megatron_core.dir/data/dataset.cpp.s
+
+core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o: core/CMakeFiles/megatron_core.dir/flags.make
+core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o: /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/evaluation/metrics.cpp
+core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o: core/CMakeFiles/megatron_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o -MF CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o.d -o CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o -c /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/evaluation/metrics.cpp
+
+core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.i"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/evaluation/metrics.cpp > CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.i
+
+core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.s"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/evaluation/metrics.cpp -o CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.s
+
+core/CMakeFiles/megatron_core.dir/performance/performance.cpp.o: core/CMakeFiles/megatron_core.dir/flags.make
+core/CMakeFiles/megatron_core.dir/performance/performance.cpp.o: /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/performance/performance.cpp
+core/CMakeFiles/megatron_core.dir/performance/performance.cpp.o: core/CMakeFiles/megatron_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object core/CMakeFiles/megatron_core.dir/performance/performance.cpp.o"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/megatron_core.dir/performance/performance.cpp.o -MF CMakeFiles/megatron_core.dir/performance/performance.cpp.o.d -o CMakeFiles/megatron_core.dir/performance/performance.cpp.o -c /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/performance/performance.cpp
+
+core/CMakeFiles/megatron_core.dir/performance/performance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/megatron_core.dir/performance/performance.cpp.i"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/performance/performance.cpp > CMakeFiles/megatron_core.dir/performance/performance.cpp.i
+
+core/CMakeFiles/megatron_core.dir/performance/performance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/megatron_core.dir/performance/performance.cpp.s"
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/core/performance/performance.cpp -o CMakeFiles/megatron_core.dir/performance/performance.cpp.s
+
 # Object files for target megatron_core
 megatron_core_OBJECTS = \
 "CMakeFiles/megatron_core.dir/tensor/tensor.cpp.o" \
@@ -265,7 +307,10 @@ megatron_core_OBJECTS = \
 "CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o" \
 "CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o" \
 "CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o" \
-"CMakeFiles/megatron_core.dir/training/trainer.cpp.o"
+"CMakeFiles/megatron_core.dir/training/trainer.cpp.o" \
+"CMakeFiles/megatron_core.dir/data/dataset.cpp.o" \
+"CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o" \
+"CMakeFiles/megatron_core.dir/performance/performance.cpp.o"
 
 # External object files for target megatron_core
 megatron_core_EXTERNAL_OBJECTS =
@@ -283,9 +328,12 @@ core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.o
 core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/optimizers/adamw.cpp.o
 core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/loss/cross_entropy_loss.cpp.o
 core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/training/trainer.cpp.o
+core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/data/dataset.cpp.o
+core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o
+core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/performance/performance.cpp.o
 core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/build.make
 core/libmegatron_core.a: core/CMakeFiles/megatron_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libmegatron_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libmegatron_core.a"
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && $(CMAKE_COMMAND) -P CMakeFiles/megatron_core.dir/cmake_clean_target.cmake
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/megatron_core.dir/link.txt --verbose=$(VERBOSE)
 

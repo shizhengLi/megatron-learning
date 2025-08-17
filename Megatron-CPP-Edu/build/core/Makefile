@@ -175,6 +175,54 @@ megatron_core/fast:
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/build
 .PHONY : megatron_core/fast
 
+data/dataset.o: data/dataset.cpp.o
+.PHONY : data/dataset.o
+
+# target to build an object file
+data/dataset.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/data/dataset.cpp.o
+.PHONY : data/dataset.cpp.o
+
+data/dataset.i: data/dataset.cpp.i
+.PHONY : data/dataset.i
+
+# target to preprocess a source file
+data/dataset.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/data/dataset.cpp.i
+.PHONY : data/dataset.cpp.i
+
+data/dataset.s: data/dataset.cpp.s
+.PHONY : data/dataset.s
+
+# target to generate assembly for a file
+data/dataset.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/data/dataset.cpp.s
+.PHONY : data/dataset.cpp.s
+
+evaluation/metrics.o: evaluation/metrics.cpp.o
+.PHONY : evaluation/metrics.o
+
+# target to build an object file
+evaluation/metrics.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.o
+.PHONY : evaluation/metrics.cpp.o
+
+evaluation/metrics.i: evaluation/metrics.cpp.i
+.PHONY : evaluation/metrics.i
+
+# target to preprocess a source file
+evaluation/metrics.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.i
+.PHONY : evaluation/metrics.cpp.i
+
+evaluation/metrics.s: evaluation/metrics.cpp.s
+.PHONY : evaluation/metrics.s
+
+# target to generate assembly for a file
+evaluation/metrics.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/evaluation/metrics.cpp.s
+.PHONY : evaluation/metrics.cpp.s
+
 layers/attention.o: layers/attention.cpp.o
 .PHONY : layers/attention.o
 
@@ -439,6 +487,30 @@ optimizers/sgd.cpp.s:
 	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/optimizers/sgd.cpp.s
 .PHONY : optimizers/sgd.cpp.s
 
+performance/performance.o: performance/performance.cpp.o
+.PHONY : performance/performance.o
+
+# target to build an object file
+performance/performance.cpp.o:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/performance/performance.cpp.o
+.PHONY : performance/performance.cpp.o
+
+performance/performance.i: performance/performance.cpp.i
+.PHONY : performance/performance.i
+
+# target to preprocess a source file
+performance/performance.cpp.i:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/performance/performance.cpp.i
+.PHONY : performance/performance.cpp.i
+
+performance/performance.s: performance/performance.cpp.s
+.PHONY : performance/performance.s
+
+# target to generate assembly for a file
+performance/performance.cpp.s:
+	cd /data/lishizheng/python_projects/megatron-learning/Megatron-CPP-Edu/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/megatron_core.dir/build.make core/CMakeFiles/megatron_core.dir/performance/performance.cpp.s
+.PHONY : performance/performance.cpp.s
+
 tensor/tensor.o: tensor/tensor.cpp.o
 .PHONY : tensor/tensor.o
 
@@ -500,6 +572,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... megatron_core"
+	@echo "... data/dataset.o"
+	@echo "... data/dataset.i"
+	@echo "... data/dataset.s"
+	@echo "... evaluation/metrics.o"
+	@echo "... evaluation/metrics.i"
+	@echo "... evaluation/metrics.s"
 	@echo "... layers/attention.o"
 	@echo "... layers/attention.i"
 	@echo "... layers/attention.s"
@@ -533,6 +611,9 @@ help:
 	@echo "... optimizers/sgd.o"
 	@echo "... optimizers/sgd.i"
 	@echo "... optimizers/sgd.s"
+	@echo "... performance/performance.o"
+	@echo "... performance/performance.i"
+	@echo "... performance/performance.s"
 	@echo "... tensor/tensor.o"
 	@echo "... tensor/tensor.i"
 	@echo "... tensor/tensor.s"

@@ -21,41 +21,53 @@ LayerNorm::LayerNorm(int normalized_shape, float eps, const std::string& name)
 }
 
 Tensor LayerNorm::forward(const Tensor& input) {
-    // Input shape: [batch_size, normalized_shape]
+    // Input shape: [batch_size, ..., normalized_shape]
     
     input_ = input;
     
-    // Compute mean and variance
-    mean_ = input.mean(1);  // [batch_size]
-    var_ = Tensor({input.shape()[0]});
+    // Reshape input to 2D: [batch_size * ..., normalized_shape]
+    int batch_size = 1;
+    for (int i = 0; i < input.dim() - 1; ++i) {
+        batch_size *= input.shape()[i];
+    }
     
-    for (int i = 0; i < input.shape()[0]; ++i) {
+    Tensor input_2d = input.view({batch_size, normalized_shape_});
+    
+    // Compute mean and variance for each batch
+    mean_ = input_2d.mean(1);  // [batch_size]
+    var_ = Tensor({batch_size});
+    
+    for (int i = 0; i < batch_size; ++i) {
         float sum_sq = 0.0f;
-        for (int j = 0; j < input.shape()[1]; ++j) {
-            float diff = input[i * input.shape()[1] + j] - mean_[i];
+        for (int j = 0; j < normalized_shape_; ++j) {
+            float diff = input_2d[i * normalized_shape_ + j] - mean_[i];
             sum_sq += diff * diff;
         }
-        var_[i] = sum_sq / input.shape()[1];
+        var_[i] = sum_sq / normalized_shape_;
     }
     
     // Normalize input
-    normalized_ = Tensor(input.shape());
+    normalized_ = Tensor(input_2d.shape());
     
-    for (int i = 0; i < input.shape()[0]; ++i) {
+    for (int i = 0; i < batch_size; ++i) {
         float std = std::sqrt(var_[i] + eps_);
-        for (int j = 0; j < input.shape()[1]; ++j) {
-            normalized_[i * input.shape()[1] + j] = 
-                (input[i * input.shape()[1] + j] - mean_[i]) / std;
+        for (int j = 0; j < normalized_shape_; ++j) {
+            normalized_[i * normalized_shape_ + j] = 
+                (input_2d[i * normalized_shape_ + j] - mean_[i]) / std;
         }
     }
     
     // Apply weight and bias
-    Tensor output = Tensor(input.shape());
-    for (int i = 0; i < output.size(); ++i) {
-        output[i] = normalized_[i] * weight_[i % normalized_shape_] + bias_[i % normalized_shape_];
+    Tensor output_2d = Tensor(input_2d.shape());
+    for (int i = 0; i < batch_size; ++i) {
+        for (int j = 0; j < normalized_shape_; ++j) {
+            output_2d[i * normalized_shape_ + j] = 
+                normalized_[i * normalized_shape_ + j] * weight_[j] + bias_[j];
+        }
     }
     
-    return output;
+    // Reshape output back to original dimensions
+    return output_2d.view(input.shape());
 }
 
 Tensor LayerNorm::backward(const Tensor& grad_output) {

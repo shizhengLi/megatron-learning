@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmegatron_models.a CMakeFiles/megatron_models.dir/gpt/gpt_model.cpp.o CMakeFiles/megatron_models.dir/transformer/transformer_classifier.cpp.o
+/usr/bin/ranlib libmegatron_models.a
