@@ -211,12 +211,6 @@ int main() {
 
 本项目采用 MIT 许可证，详见 LICENSE 文件。
 
-## 联系方式
-
-如有问题或建议，请通过以下方式联系：
-
-- 提交Issues: [GitHub Issues](https://github.com/your-repo/megatron-learning/issues)
-- 邮箱: your-email@example.com
 
 ---
 
