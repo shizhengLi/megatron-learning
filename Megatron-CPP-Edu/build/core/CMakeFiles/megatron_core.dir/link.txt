@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmegatron_core.a CMakeFiles/megatron_core.dir/tensor/tensor.cpp.o
+/usr/bin/ranlib libmegatron_core.a
